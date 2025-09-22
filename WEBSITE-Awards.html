@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>MAGAZINE</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    background-image: url('https://t4.ftcdn.net/jpg/04/04/80/95/360_F_404809599_Syn3aIbwC5U4Resv4IgZwHCHFAD9Zbir.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: center;
+                }
+                .logo-box {
+                    translate: -250px;
+                    background-color: #ffffff;
+                    color: white;
+                    padding: 5px 20px;
+                    border-radius: 12px; 
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .nbalogo {
+                    translate: 0px 40px;
+                }
+                .navbar {
+                    display: flex;
+                    border-radius: 12px;
+                    width: 100%;
+                    justify-content: center;
+                    overflow: hidden;
+                    background-color: rgb(63, 63, 63);
+                }
+                .navbar a {
+                    translate: -50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(64, 145, 179);
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 40px;
+                    font-family: 'Amarante';
+                    text-decoration: none;
+                    transition: transform 0.2s ease;
+                }
+                .navbar a:hover {
+                    transform: scale(1.3);    
+                }
+                .navbar p {
+                    translate: -50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(64, 145, 179);
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 40px;
+                    font-family: 'Amarante';
+                    text-decoration: none;
+                    transition: transform 0.2s ease;
+                }
+                .navbar p:hover {
+                    transform: scale(1.3);    
+                }
+                .moving-images {
+                    display: flex;
+                    top: 50px;
+                    left: -200px;
+                    width: 150px; 
+                }
+                .moving-images img {
+                    height: 100px;
+                    width: 400px;
+                    translate: 0px 10px;
+                    margin-right: 15px;
+                    border-radius: 12px;
+                    display: inline-block;
+                    transition: transform 0.2s ease;
+                }
+                .moving-images img:hover {
+                    transform: scale(1.3);
+                }
+                .ball img {
+                    display: inline-block;
+                    transition: transform 0.2s ease;
+                    width: 200px;
+                }
+                .ball img:hover {
+                    transform: scale(1.3);
+                }
+                .box {
+                    max-width: 1100px;
+                    margin: auto;
+                    padding: 40px 20px;
+                }
+                h1 {
+                    text-align: center;
+                    margin-bottom: 40px;
+                    font-size: 40px;
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                .grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+                }
+                .award {
+                    background: #1e1e1e;
+                    text-align: center;
+                    padding: 20px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 10px rgb(31, 31, 31);
+                    transition: transform 0.2s, box-shadow 0.2s;
+                }
+                .award:hover {
+                    transform: translateY(-6px);
+                    box-shadow: 0 6px 16px rgb(31, 31, 31);
+                }
+                .award h2 {
+                    margin: 0 0 10px;
+                    color: #c8102e;
+                    font-size: 20px;
+                    font-family: 'Eagle Lake';
+                }
+                .award p {
+                    font-size: 15px;
+                    line-height: 1.5;
+                    color: white;
+                }
+
+                </style>
+        </head>
+        <body>
+            <div class="navbar">
+                <div class="logo-box">
+                    <img class="nbalogo" src="https://i.imgur.com/1m6Oa56_d.png" alt="NBA Logo">
+                </div>
+                <a href="index.html"><b>Home</b></a>
+                <a href="WEBSITE-History.html"><b>History</b></a>
+                <p><b>Awards</b></p>
+                <a href="WEBSITE-Teams.html"><b>Teams</b></a>
+                <a href="WEBSITE-GOATs.html"><b>GOATs</b></a>
+                <a href="WEBSITE-Author.html"><b>Author</b></a>
+                <div class="ball">
+                    <img src="https://png.pngtree.com/png-vector/20221121/ourmid/pngtree-fireball-basketball-png-image_6473095.png" alt="Basketball">
+                </div>
+            </div>
+            <div class="moving-images">
+                    <img src="https://i.pinimg.com/736x/e2/fd/78/e2fd78a22be7716309ab08a90b4ac792.jpg" alt="nba">
+                    <img src="https://wallpapers.com/images/featured/aesthetic-nba-ba4w0pe75y02ux5q.jpg" alt="nba">
+                    <img src="https://i.pinimg.com/736x/ed/4a/a0/ed4aa0a784dd51115a4de02dbd76321d.jpg" alt="nba">
+                    <img src="https://wallpapers.com/images/hd/4k-nba-jordan-dunking-mj4r88av85jysp0n.jpg" alt="nba">
+                    <img src="https://wallpaper.dog/large/5446113.jpg" alt="nba">
+                    <img src="https://wallpapers.com/images/hd/kobe-bryant-cool-confetti-1i4q40k8428z0k6i.jpg" alt="nba">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/777/954/566/nba-theme-background-images-wallpaper-preview.jpg" alt="nba">
+                    <img src="https://i.pinimg.com/736x/63/da/f7/63daf7110bfe85060efe2e0621ede232.jpg" alt="nba">
+                    <img src="https://images.complex.com/complex/image/upload/v1723842901/sanity-new/tmp-name-3-3016-1670731795-84_16x9-6373362.jpg" alt="nba">
+                    <img src="https://t4.ftcdn.net/jpg/09/64/16/61/360_F_964166119_VR0EHVOeU6jm7mjYwvJHBtelxINGpunu.jpg" alt="nba">
+            </div>
+            <div class="box">
+                <h1 style="font-family: 'Bungee Spice';">NBA Awards</h1>
+                <div class="grid">
+                    <div class="award">
+                       <h2>Most VAluable Player (MVP)</h2>
+                        <p>Given to the best all-around player during the regular season with the biggest impact on their team's success</p>
+                    </div>
+                    <div class="award">
+                        <h2>Rookie of the Year</h2>
+                        <p>Given to the best first-year player who makes the strongest impact in their debut NBA season.</p>
+                    </div>
+                    <div class="award">
+                        <h2>Defensive Player of the Year</h2>
+                        <p>Recognizes the league's top defender, judged by blocks, steals, and overall defensive presence.</p>
+                    </div>
+                    <div class="award">
+                        <h2>Sixth Man of the Year</h2>
+                        <p>Awarded to the most impactful player coming off the bench, providing crucial scoring and energy.</p>
+                    </div>
+                    <div class="award">
+                        <h2>Most Improved Player</h2>
+                        <p>Given to the player who shows the most noticeable improvement compared to their last seasons.</p>
+                    </div>
+                    <div class="award">
+                        <h2>Coach of the Year</h2>
+                        <p>Recognizes the coach eho led their team success, often exceeding expectations.</p>
+                    </div>
+                    <div class="award">
+                        <h2>Clutch Player of the Year</h2>
+                        <p>Given to the player who consistently delivers in high-pressure, late-game situations.</p>
+                    </div>
+                    <div class="award">
+                        <h2>Finals MVP</h2>
+                        <p>Awarded to the best player in the NBA Finals, usually from the championship-winning team.</p>
+                    </div>
+                    <div class="award">
+                        <h2>Championship Trophy</h2>
+                        <p>The Larry O'Brien Trophy, awarded to the team that wins the NBA Finals and becomes champion.</p>
+                    </div>
+                </div>
+            </div>
+            </body>
+            </html>

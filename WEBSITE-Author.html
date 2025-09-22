@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>MAGAZINE</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    background-image: url('https://t4.ftcdn.net/jpg/04/04/80/95/360_F_404809599_Syn3aIbwC5U4Resv4IgZwHCHFAD9Zbir.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: center;
+                }
+                .logo-box {
+                    translate: -250px;
+                    background-color: #ffffff;
+                    color: white;
+                    padding: 5px 20px;
+                    border-radius: 12px; 
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .nbalogo {
+                    translate: 0px 40px;
+                }
+                .navbar {
+                    display: flex;
+                    border-radius: 12px;
+                    width: 100%;
+                    justify-content: center;
+                    overflow: hidden;
+                    background-color: rgb(63, 63, 63);
+                }
+                .navbar a {
+                    translate: -50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(64, 145, 179);
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 40px;
+                    font-family: 'Amarante';
+                    text-decoration: none;
+                    transition: transform 0.2s ease;
+                }
+                .navbar a:hover {
+                    transform: scale(1.3);    
+                }
+                .navbar p {
+                    translate: -50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(64, 145, 179);
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 40px;
+                    font-family: 'Amarante';
+                    text-decoration: none;
+                    transition: transform 0.2s ease;
+                }
+                .navbar p:hover {
+                    transform: scale(1.3);    
+                }
+                .moving-images {
+                    display: flex;
+                    top: 50px;
+                    left: -200px;
+                    width: 150px; 
+                }
+                .moving-images img {
+                    height: 100px;
+                    width: 400px;
+                    translate: 0px 10px;
+                    margin-right: 15px;
+                    border-radius: 12px;
+                    display: inline-block;
+                    transition: transform 0.2s ease;
+                }
+                .moving-images img:hover {
+                    transform: scale(1.3);
+                }
+                .ball img {
+                    display: inline-block;
+                    transition: transform 0.2s ease;
+                    width: 200px;
+                }
+                .ball img:hover {
+                    transform: scale(1.3);
+                }
+                .author {
+                    background: #161b22;
+                    border-radius: 15px;
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+                    max-width: 800px;
+                    width: 90%;
+                    padding: 30px;
+                    text-align: center;
+                    margin: 40px auto 0 auto;
+                    animation: fadeIn 0.8s ease-in-out;
+                }
+                .author img {
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                    border: 4px solid #c8102e;
+                    margin-bottom: 20px;
+                    object-fit: cover;
+                }
+                .author h1 {
+                    font-size: 32px;
+                    font-family: 'Audiowide';
+                    margin-bottom: 10px;
+                    color: #1d9bf0;
+                }
+                .author h3 {
+                    font-weight: normal;
+                    color: #9ba270;
+                    margin-bottom: 20px;
+                }
+                .author p {
+                    font-size: 16px;
+                    line-height: 1.6;
+                    color: #ccc;
+                    margin-bottom: 25px;
+                }
+                .references {
+                    margin: 50px auto;
+                    padding: 20px;
+                    max-width: 800px;
+                    background: #2c2c2c;
+                    border-radius: 12px;
+                    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+                    text-align: left;
+                }
+                .references h2 {
+                    font-size: 32px;
+                    margin-bottom: 15px;
+                    color: #ff9800;
+                    text-align: center;
+                }
+                .references p {
+                    font-size: 50px;
+                    color: #c8102e;
+                }
+                .references ul {
+                    list-style: none;
+                    padding: 0;
+                }
+                .references ul li {
+                    margin: 10px 0;
+                    font-size: 18px;
+                }
+                .references ul li a {
+                    color: #00bfff;
+                    text-decoration: none;
+                    transition: color 0.3s;
+                }
+                .references ul li a:hover {
+                    color: #ff9800;
+                }
+                </style>
+        </head>
+        <body>
+            <div class="navbar">
+                <div class="logo-box">
+                    <img class="nbalogo" src="https://i.imgur.com/1m6Oa56_d.png" alt="NBA Logo">
+                </div>
+                <a href="index.html"><b>Home</b></a>
+                <a href="WEBSITE-History.html"><b>History</b></a>
+                <a href="WEBSITE-Awards.html"><b>Awards</b></a>
+                <a href="WEBSITE-Teams.html"><b>Teams</b></a>
+                <a href="WEBSITE-GOATs.html"><b>GOATs</b></a>
+                <p><b>Author</b></p>
+                <div class="ball">
+                    <img src="https://png.pngtree.com/png-vector/20221121/ourmid/pngtree-fireball-basketball-png-image_6473095.png" alt="Basketball">
+                </div>
+            </div>
+            <div class="moving-images">
+                    <img src="https://i.pinimg.com/736x/e2/fd/78/e2fd78a22be7716309ab08a90b4ac792.jpg" alt="nba">
+                    <img src="https://wallpapers.com/images/featured/aesthetic-nba-ba4w0pe75y02ux5q.jpg" alt="nba">
+                    <img src="https://i.pinimg.com/736x/ed/4a/a0/ed4aa0a784dd51115a4de02dbd76321d.jpg" alt="nba">
+                    <img src="https://wallpapers.com/images/hd/4k-nba-jordan-dunking-mj4r88av85jysp0n.jpg" alt="nba">
+                    <img src="https://wallpaper.dog/large/5446113.jpg" alt="nba">
+                    <img src="https://wallpapers.com/images/hd/kobe-bryant-cool-confetti-1i4q40k8428z0k6i.jpg" alt="nba">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/777/954/566/nba-theme-background-images-wallpaper-preview.jpg" alt="nba">
+                    <img src="https://i.pinimg.com/736x/63/da/f7/63daf7110bfe85060efe2e0621ede232.jpg" alt="nba">
+                    <img src="https://images.complex.com/complex/image/upload/v1723842901/sanity-new/tmp-name-3-3016-1670731795-84_16x9-6373362.jpg" alt="nba">
+                    <img src="https://t4.ftcdn.net/jpg/09/64/16/61/360_F_964166119_VR0EHVOeU6jm7mjYwvJHBtelxINGpunu.jpg" alt="Basketball Rim and Ball">
+            </div>
+            <div class="author">
+                <img src="https://i.imgur.com/OdZvtyt_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" alt="Author's Picture">
+                <h1>Chris Zian F. Benavidez</h1>
+                <h3>Creator of This NBA Website</h3>
+                <p>Hi! I'm Chris Zian F. Benavidez, the creator of this website. Basketball has always been my passion, and this site is my way of celebrating the history, legends and magic of the NBA. My goal is to share the stories and greatness of the game with fans all around the world.</p>
+            </div>
+            <section class="references">
+                <h2>References</h2>
+                <p>Informations:</p>
+                <ul>
+                    <li><a href="https://www.nba.com" target="_blank">NBA Official Website</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/National_Basketball_Association" target="_blank">History of NBA</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/List_of_NBA_awards" target="_blank">NBA Awards</a></li>
+                    <li><a href="https://www.foxsports.com/nba/boston-celtics-team" target="_blank">NBA Teams</a></li>
+                    <li><a href="https://www.espn.com/nba/history/awards" target="_blank">NBA Players' Stats and Accolades</a></li>
+                </ul>
+                <p>Images:</p>
+                <ul>
+                    <li><a href="https://t4.ftcdn.net/jpg/04/04/80/95/360_F_404809599_Syn3aIbwC5U4Resv4IgZwHCHFAD9Zbir.jpg" target="_blank">Background</a></li>
+                    <li><a href="https://imgur.com/user/8IamZ24/posts" target="_blank">NBA Logo</a></li>
+                    <li><a href="https://png.pngtree.com/png-vector/20221121/ourmid/pngtree-fireball-basketball-png-image_6473095.png" target="_blank">Ball of Basketball</a></li>
+                    <li><a href="https://i.pinimg.com/736x/e2/fd/78/e2fd78a22be7716309ab08a90b4ac792.jpg" target="_blank">NBA Picture (1)</a></li>
+                    <li><a href="https://wallpapers.com/images/featured/aesthetic-nba-ba4w0pe75y02ux5q.jpg" target="_blank">NBA Picture (2)</a></li>
+                    <li><a href="https://wallpaper.dog/large/5446113.jpg" target="_blank">NBA Picture (3)</a></li>
+                    <li><a href="https://i.pinimg.com/736x/63/da/f7/63daf7110bfe85060efe2e0621ede232.jpg" target="_blank">NBA Picture (4)</a></li>
+                    <li><a href="https://images.complex.com/complex/image/upload/v1723842901/sanity-new/tmp-name-3-3016-1670731795-84_16x9-6373362.jpg" target="_blank">NBA Picture (5)</a></li>
+                    <li><a href="https://t4.ftcdn.net/jpg/09/64/16/61/360_F_964166119_VR0EHVOeU6jm7mjYwvJHBtelxINGpunu.jpg" target="_blank">Basketball Rim and Ball Picture</a></li>
+                    <li><a href="https://c4.wallpaperflare.com/wallpaper/777/954/566/nba-theme-background-images-wallpaper-preview.jpg" target="_blank">LeBron James (1)</a></li>
+                    <li><a href="https://images4.alphacoders.com/133/1335654.jpeg" target="_blank">LeBron James (2)</a></li>
+                    <li><a href="https://i.pinimg.com/736x/4a/f9/e4/4af9e42cfb1117005ce0105e835744ae.jpg" target="_blank">LeBron James (3)</a></li>
+                    <li><a href="https://i.pinimg.com/736x/ed/4a/a0/ed4aa0a784dd51115a4de02dbd76321d.jpg" target="_blank">Stephen Curry (1)</a></li>
+                    <li><a href="https://phantom-marca.unidadeditorial.es/973911fa996e0a4c3f222a5359231557/crop/0x0/2045x1363/resize/828/f/jpg/assets/multimedia/imagenes/2024/01/25/17061901274659.jpg" target="_blank">Stephen Curry (2)</a></li>
+                    <li><a href="https://wallpapers.com/images/hd/steph-curry-with-hands-wide-open-2bnprwf5kh944chi.jpg" target="_blank">Stephen Curry (3)</a></li>
+                    <li><a href="https://wallpapers.com/images/hd/4k-nba-jordan-dunking-mj4r88av85jysp0n.jpg" target="_blank">Michael Jordan (1)</a></li>
+                    <li><a href="https://npr.brightspotcdn.com/dims4/default/e85c699/2147483647/strip/true/crop/640x394+0+3/resize/880x542!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwunc%2Ffiles%2F201407%2FMichaelJordan3.jpg" target="_blank">Michael Jordan (2)</a></li>
+                    <li><a href="https://fivethirtyeight.com/wp-content/uploads/2020/04/GettyImages-52811398-1-e1587133785125.jpg" target="_blank">Michael Jordan (3)</a></li>
+                    <li><a href="https://wallpapers.com/images/hd/kobe-bryant-cool-confetti-1i4q40k8428z0k6i.jpg" target="_blank">Kobe Bryant (1)</a></li>
+                    <li><a href="https://cdn.abcotvs.com/dip/images/12706535_hypatia-h_4abcb4f1f374e5a50f8155f108dedcac-h_91c17a116cfea101074fa9d630ee010d.JPG" target="_blank">Kobe Bryant (2)</a></li>
+                    <li><a href="https://thepelmelpmhs.com/wp-content/uploads/2020/02/kobe_topEDITED-900x557.jpg" target="_blank">Kobe Bryant (3)</a></li>
+                    <li><a href="https://wallpapers.com/images/hd/shaquille-o-neal-34-jz55payu6t2472jl.jpg" target="_blank">Shaquille O'Neal (1)</a></li>
+                    <li><a href="https://i.ytimg.com/vi/ZTk0fwsJ6qo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBTD_vxrQLaVVhudlYJ2UEOg1ENOg" target="_blank">Shaquille O'Neal (2)</a></li>
+                    <li><a href="https://sportshub.cbsistatic.com/i/r/2016/04/25/aecc4e4c-729d-46ed-8934-549910e7a155/resize/750x422/65027ac7b7d461c9ea0d68edbf7c08b3/duncan.jpg" target="_blank">Tim Duncan (1)</a></li>
+                    <li><a href="https://vault.si.com/.image/t_share/MTY5MTAwMzkzOTM3MzgwNjQx/duncan-vaultlead-0711jpg.jpg" target="_blank">Tim Duncan (2)</a></li>
+                    <li><a href="https://static.tvtropes.org/pmwiki/pub/images/833d4d9f1ddd284d92eaa55af1a25ccf.jpg" target="_blank">Kareem Abdul-Jabbar</a></li>
+                    <li><a href="https://www.aarp.org/content/dam/aarp/entertainment/television/2022/04/1140-magic-johnson-lakers.jpg" target="_blank">Magic Johnson</a></li>
+                    <li><a href="https://www.rappler.com/tachyon/2022/08/bill-russell-boston-celtics.jpeg" target="_blank">Bill Russell</a></li>
+                    <li><a href="https://www.sportscasting.com/wp-content/uploads/2023/07/Larry-Bird-Boston-Celtics-NBA.jpg" target="_blank">Larry Bird</a></li>
+                    <li><a href="https://static.wixstatic.com/media/36f47e_1f3c1f1c90da40978f8877e9e65beb9e~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/36f47e_1f3c1f1c90da40978f8877e9e65beb9e~mv2.jpg" target="_blank">Wilt Chamberlain</a></li>
+                    <li><a href="https://cdn.nba.com/manage/2017/08/hakeem-olajuwon-iso-stands.jpg" target="_blank">Hakeem Olajuwon</a></li>
+                    <li><a href="https://heavy.com/wp-content/uploads/2022/06/Kevin-Durant-Warriors.jpg?quality=65&strip=all&w=780" target="_blank">Kevin Durant</a></li>
+                    <li><a href="https://basketballforever.com/wp-content/uploads/2022/01/dn.jpg" target="_blank">Dirk Nowitzki</a></li>
+                    <li><a href="https://images.ctfassets.net/72n9zqcdnf4y/2X1A0fgQf9GDdGYQsfvy34/18d91c93e9763840ac75aa4ee07d3095/Giannis_A_USATI.jpg" target="_blank">Giannis Antetokounmpo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Los-Angeles-Lakers-Logo-2002-Present.png" target="_blank">Los Angeles Lakers Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Golden-State-Warriors-symbol.png" target="_blank">Golden State Warriors Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Phoenix-Suns-Symbol.png" target="_blank">Phoenix Suns Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/08/Los-Angeles-Clippers-Logo.png" target="_blank">Los Angeles Clippers logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Sacramento-Kings-logo.png" alt="Sacramento Kings Logo" target="_blank">Sacramento Kings Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/06/mavs-logo.png" target="_blank">Dallas Mavericks Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Houston-Rockets-Logo-2019-Present.png" target="_blank">Houston Rockets Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/San-Antonio-Spurs-Logo-2017-Present.png" target="_blank">San Antonio Spurs Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Memphis-Grizzlies-Emblem.png" target="_blank">Memphis Grizzlies Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/06/New-Orleans-Pelicans-Logo.png" target="_blank">New Orleans Pelicans Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Denver-Nuggets-Logo-700x394.png" target="_blank">Denver Nuggets Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Utah-Jazz-logo-700x394.png" target="_blank">Utah Jazz Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Minnesota-Timberwolves-Logo-2017-Present.png" target="_blank">Minesota Timberwolves Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Oklahoma-City-Thunder-Symbol.png" target="_blank">Oklahoma City Thunder Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Portland-Trail-Blazers-Symbol.png" target="_blank">Portland Trail Blazers Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Boston-Celtics-logo.png" target="_blank">Boston Celtics Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Miami-Heat-Symbol.png" target="_blank">Miami Heat Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Chicago-Bulls-Symbol.png" target="_blank">Chicago Bulls Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/New-York-Knicks-logo.png" target="_blank">New York Knicks Logo</a></li>
+                    <li><a href="https://1000logos.net/wp-content/uploads/2018/05/Brooklyn-Nets-Logo.png" target="_blank">Brooklyn Nets Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-76ers-logo.png" target="_blank">Philadelphia 76ers Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Milwaukee-Bucks-logo.png" target="_blank">Milwaukee Bucks Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Toronto-Raptors-logo.png" target="_blank">Toronto Raptors Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Cleveland-Cavaliers-Symbol.png" target="_blank">Cleaveland Cavaliers Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Detroit-Pistons-Logo-2017-Present.png" target="_blank">Detroit Pistons Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Indiana-Pacers-Logo-2017-Present.png" target="_blank">Indiana Pacers Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Atlanta-Hawks-logo.png" target="_blank">Atlanta Hawks Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Charlotte-Hornets-Logo-2015-Present.png" target="_blank">Charlotte Hornets Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/08/Orlando-Magic-Logo.png" target="_blank">Orlando Magic Logo</a></li>
+                    <li><a href="https://logos-world.net/wp-content/uploads/2020/05/Washington-Wizards-logo.png" target="_blank">Washington Wizards Logo</a></li>
+                    <li><a href="https://imgur.com/user/8IamZ24/posts" target="_blank">Author's Image</a></li>
+                </ul>
+            </section>
+        </body>
+    </html>
